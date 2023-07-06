@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Caprasimo', cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(rgba(194, 13, 13, 0.7),
+            rgba(194, 13, 13, 0.7)),
+        url(images/R2R.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #FFFDFC;
+    font-size: 25PX;
+    font-weight: 800PX;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFDFC;
+    display: block;
+    font-weight: 400px;
+
+}
+
+.menu .navbar ul li a:hover {
+    color: black;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 130px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: #FFFDFC;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: black;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: darkred;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: black;
+}
+
+.GodOfWar {
+    padding: 100px 0;
+    background-color: rgb(124, 20, 20);
+    position: relative;
+    text-align: center;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.GodOfWar-content {
+    text-align: center;
+}
+
+
+.txt-p {
+    font-size: 16px;
+    color: black;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.GodOfWar-img {
+    position: static;
+    top: 50px;
+    right: 50px;
+}
+
+.precuelas {
+    background-image: linear-gradient(
+        rgba(194, 13, 13,0.7),
+        rgba(194, 13, 13,0.7)),
+        url(images/R2R.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 100px 0;
+}
+
+.precuelas-content {
+    text-align: center;
+}
+
+.preuelas-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.precuelas-content p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.precuelas-gruop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.precuelas-1 {
+    padding: 0 100px;
+}
+
+.precuelas-1 img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.precuelas-1 h3 {
+    color: black;
+    font-size: 18px;
+}
+
+.general {
+    display: flex;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 100px 250px 100px 100px;
+    background-color: white;
+}
+
+.general-2 {
+    background-image: url(images/GOWGHO.png);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+h2 {
+    font-size: 50px;
+    line-height: 70px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+    margin: 25px 0 45px 0;
+}
+
+.blog {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-1 {
+    padding: 15px 55px;
+}
+
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: black;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: darkred;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:991px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: black;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu :checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 100px 30px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+    .GodOfWar {
+        padding: 30px;
+    }
+
+    .GodOfWar-content h2 {
+        padding: 0;
+    }
+
+    .txt-p {
+        padding: 0;
+    }
+
+}
